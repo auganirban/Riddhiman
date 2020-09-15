@@ -1,0 +1,48 @@
+function [C] = failure_point_index(label,PostProbs)
+%Function to sort the array of the indices along with the 
+%probabilities
+%   label is the vector containing labels of the points and PostProbs is
+%   the vector containing the probabilities
+
+A = [label PostProbs];
+C = sortrows(A,[]);
+
+
+
+% max1 = -eps ;
+% max2 = -eps ;
+% max3 = -eps ;
+% max4 = -eps ;
+% max5 = -eps ;
+% for i=1:size(label)
+%     if (label(i) == -1 )
+%         if PostProbs(i,2)>max1
+%             max1 = PostProbs(i,2);
+%             index = i;
+%         end
+%     end
+% end
+% 
+% 
+% 
+% for i=1:size(label)
+%     if (label(i) == -1 )
+%         if PostProbs(i,2)>max1
+%             max1 = PostProbs(i,2);
+%             index = i;
+%         end
+%     end
+% end
+% 
+% 
+% for i=1:size(label)
+%     if (label(i) == -1 )
+%         if PostProbs(i,2)>max1
+%             max1 = PostProbs(i,2);
+%             index = i;
+%         end
+%     end
+% end
+
+end
+
